@@ -54,7 +54,7 @@ export function ProcessSection() {
                   <h3 className="text-left text-wrap hyphens-none mt-4 font-serif text-2xl font-semibold leading-snug text-gold-rose">
                     {item.title}
                   </h3>
-                  <p className="text-justified mt-2.5 text-[13.5px] leading-[1.6] tracking-[-0.012em] [word-spacing:-0.02em] text-platinum">
+                  <p className="text-justified mt-2.5 text-[13.5px] leading-[1.62] text-platinum">
                     {item.description}
                   </p>
                 </div>

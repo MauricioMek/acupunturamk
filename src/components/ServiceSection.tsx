@@ -18,22 +18,15 @@ export function ServiceSection() {
         <div className="grid items-center gap-12 lg:grid-cols-12">
           <div className="order-2 min-w-0 lg:order-1 lg:col-span-5">
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              <div
-                aria-hidden="true"
-                className="pointer-events-none absolute -bottom-3 -left-3 right-3 top-3 rounded-3xl border border-gold-rose/25 bg-charcoal/50"
-              />
               <Tilt3DCard intensity={5} className="relative">
-                <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-white/15 bg-charcoal shadow-[0_30px_60px_-15px_rgba(0,0,0,0.85)]">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-3xl bg-charcoal shadow-[0_30px_60px_-15px_rgba(0,0,0,0.85)]">
                   <Image
-                    src="/images/sessao-domiciliar.jpg"
+                    src="/images/atendimento-domiciliar.jpg"
                     alt="Profissional realizando aplicação cuidadosa de acupuntura em ambiente residencial tranquilo"
                     fill
+                    quality={95}
                     sizes="(max-width: 1024px) 100vw, 42vw"
-                    className="object-cover brightness-[0.94] contrast-[1.05]"
-                  />
-                  <div
-                    aria-hidden="true"
-                    className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-inset ring-gold-champagne/20"
+                    className="scale-[1.01] object-cover object-center brightness-[0.95] contrast-[1.04]"
                   />
                 </div>
               </Tilt3DCard>
@@ -56,7 +49,7 @@ export function ServiceSection() {
             <p className="text-justified mt-4 max-w-[64ch] text-base leading-relaxed text-platinum">
               A acupuntura e a ventosaterapia domiciliares oferecem a mesma
               atenção técnica de um consultório, com a vantagem de acontecerem
-              no espaço onde você já se sente à vontade. Levamos a estrutura
+              no espaço onde você já se sente à vontade. Levo a estrutura
               completa até a sua casa — incluindo maca portátil, ventosas
               higienizadas e agulhas estéreis descartáveis.
             </p>
@@ -73,7 +66,7 @@ export function ServiceSection() {
                     <h3 className="text-left text-wrap hyphens-none font-serif text-xl font-semibold text-gold-rose">
                       {pillar.title}
                     </h3>
-                    <p className="text-justified mt-2 text-[13.5px] leading-[1.6] tracking-[-0.012em] [word-spacing:-0.02em] text-platinum">
+                    <p className="text-justified mt-2 text-[13.5px] leading-[1.62] text-platinum">
                       {pillar.description}
                     </p>
                   </div>

@@ -13,19 +13,18 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <BrandMark />
-            <p className="text-justified mt-4 max-w-[42ch] text-sm leading-relaxed text-platinum">
+            <p className="text-justified mt-4 max-w-[44ch] text-sm leading-relaxed text-platinum">
               {siteConfig.brand.tagline}
             </p>
             <div className="mt-5 space-y-2 text-xs text-platinum/85">
               <p className="font-medium text-ivory">
                 {siteConfig.professional.name}
               </p>
-              <p>{siteConfig.professional.registrationLabel}</p>
             </div>
           </div>
 
           <div className="lg:col-span-3">
-            <h2 className="font-serif text-xl font-semibold text-ivory">
+            <h2 className="font-serif text-xl font-semibold text-gold-rose">
               Navegação
             </h2>
             <ul className="mt-4 space-y-2.5 text-sm text-platinum">
@@ -63,7 +62,7 @@ export function Footer() {
           </div>
 
           <div className="lg:col-span-4">
-            <h2 className="font-serif text-xl font-semibold text-ivory">
+            <h2 className="font-serif text-xl font-semibold text-gold-rose">
               Contato e Região
             </h2>
             <ul className="mt-4 space-y-3 text-sm text-platinum">
@@ -84,9 +83,6 @@ export function Footer() {
                   <WhatsappIcon className="h-4 w-4 shrink-0 text-gold-rose" />
                   <span>{siteConfig.contact.whatsappDisplay}</span>
                 </a>
-              </li>
-              <li className="text-xs text-platinum/80">
-                E-mail: {siteConfig.contact.email}
               </li>
             </ul>
           </div>

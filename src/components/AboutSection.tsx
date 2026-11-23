@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { Award, FileCheck2 } from "lucide-react";
+import { Award } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { Tilt3DCard } from "./Tilt3DCard";
 import { ProfessionalPortrait } from "./ProfessionalPortrait";
@@ -66,14 +66,6 @@ export function AboutSection() {
                   {professional.role}
                 </p>
 
-                <div className="mt-4 inline-flex max-w-full items-center gap-2 rounded-full border border-gold-rose/35 bg-obsidian/70 px-4 py-1.5 text-xs font-medium text-ivory/85">
-                  <FileCheck2
-                    className="h-3.5 w-3.5 shrink-0 text-gold-rose"
-                    aria-hidden="true"
-                  />
-                  <span>{professional.registrationLabel}</span>
-                </div>
-
                 <div className="mt-6 space-y-3.5">
                   {professional.bioParagraphs.map((paragraph, index) => (
                     <p
@@ -88,7 +80,7 @@ export function AboutSection() {
                 <div className="mt-7 border-t border-white/10 pt-6">
                   <h3 className="flex items-center gap-2 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-gold-rose">
                     <Award className="h-4 w-4 shrink-0" aria-hidden="true" />
-                    <span>Formação e qualificações (editável)</span>
+                    <span>Formação e qualificações</span>
                   </h3>
                   <ul className="mt-3.5 grid gap-3 sm:grid-cols-2">
                     {professional.credentialsList.map((credential, idx) => (

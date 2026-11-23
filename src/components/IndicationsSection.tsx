@@ -63,7 +63,7 @@ export function IndicationsSection() {
                   <h3 className="text-left text-wrap hyphens-none mt-5 font-serif text-2xl font-semibold leading-snug text-gold-rose">
                     {item.title}
                   </h3>
-                  <p className="text-justified mt-2.5 text-[14px] leading-[1.6] tracking-[-0.01em] text-platinum">
+                  <p className="text-justified mt-2.5 text-[14px] leading-[1.62] text-platinum">
                     {item.description}
                   </p>
                 </article>
@@ -77,14 +77,19 @@ export function IndicationsSection() {
             className="mt-0.5 h-5 w-5 shrink-0 text-gold-rose"
             aria-hidden="true"
           />
-          <p className="text-justified text-xs leading-relaxed text-platinum sm:text-sm">
+          <p
+            lang="pt-BR"
+            className="text-justified [word-spacing:0.03em] tracking-[0.006em] text-xs leading-[1.68] text-platinum sm:text-sm"
+          >
             <strong className="font-semibold text-ivory">
               Nota informativa:
             </strong>{" "}
             A acupuntura e a ventosaterapia atuam como cuidados terapêuticos
-            complementares e não substituem diagnóstico, acompanhamento ou
-            tratamento médico. A resposta ao atendimento varia conforme cada
-            organismo e contexto clínico.
+            complementares e não substituem diagnóstico,{" "}
+            <span className="[word-spacing:0.13em] tracking-[0.01em]">
+              acompanhamento ou tratamento médico. A resposta ao atendimento
+              varia conforme cada organismo e contexto clínico.
+            </span>
           </p>
         </div>
       </div>

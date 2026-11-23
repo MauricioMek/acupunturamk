@@ -30,7 +30,7 @@ export function FaqSection() {
             <span className="text-liquid-gold">o atendimento domiciliar</span>
           </h2>
           <p className="text-justified mx-auto mt-4 max-w-[56ch] text-base leading-relaxed text-platinum">
-            Reunimos as principais orientações sobre como preparar sua casa e
+            Reúno as principais orientações sobre como preparar sua casa e
             realizar o agendamento em Porto Alegre.
           </p>
         </div>
@@ -73,7 +73,10 @@ export function FaqSection() {
                     aria-labelledby={buttonId}
                     className="border-t border-white/10 px-6 pb-5 pt-4"
                   >
-                    <p className="text-justified max-w-[68ch] text-sm leading-relaxed text-platinum sm:text-base">
+                    <p
+                      className="text-justified max-w-[68ch] text-sm leading-relaxed text-platinum sm:text-base"
+                      style={{ hyphens: "none", WebkitHyphens: "none" }}
+                    >
                       {faq.answer}
                     </p>
                   </div>

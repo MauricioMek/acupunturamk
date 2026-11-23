@@ -36,33 +36,30 @@ export function NeighborhoodsSection() {
               bairros de referência na capital gaúcha.
             </p>
 
-            <Tilt3DCard intensity={3.5} className="mt-6">
-              <div className="smoked-glass-3d rounded-2xl p-5">
-                <div className="flex items-start gap-3">
-                  <Compass
-                    className="mt-0.5 h-5 w-5 shrink-0 text-gold-rose"
-                    aria-hidden="true"
-                  />
-                  <div className="min-w-0">
-                    <p className="text-sm font-semibold text-gold-rose">
-                      Seu bairro não está na lista?
-                    </p>
-                    <p className="text-justified mt-1.5 text-sm leading-relaxed text-platinum">
-                      Consulte a disponibilidade de rota para outros bairros de
-                      Porto Alegre e regiões próximas diretamente pelo WhatsApp.
-                    </p>
-                    <div className="mt-4">
-                      <WhatsappButton
-                        label="Consultar meu bairro"
-                        customMessage="Olá! Gostaria de verificar a disponibilidade de acupuntura e ventosaterapia domiciliar para o meu bairro em Porto Alegre."
-                        variant="glass"
-                        size="sm"
-                      />
-                    </div>
+            <div className="smoked-glass-3d mt-6 rounded-2xl p-5">
+              <div className="flex items-start gap-3">
+                <Compass
+                  className="mt-0.5 h-5 w-5 shrink-0 text-gold-rose"
+                  aria-hidden="true"
+                />
+                <div className="min-w-0">
+                  <p className="text-sm font-semibold text-gold-rose">
+                    Seu bairro não está na lista?
+                  </p>
+                  <p className="text-justified mt-1.5 text-sm leading-relaxed text-platinum">
+                    Consulte a disponibilidade de rota para outros bairros de
+                    Porto Alegre e regiões próximas diretamente pelo WhatsApp.
+                  </p>
+                  <div className="mt-4">
+                    <WhatsappButton
+                      label="Consultar meu bairro"
+                      variant="gold"
+                      size="sm"
+                    />
                   </div>
                 </div>
               </div>
-            </Tilt3DCard>
+            </div>
           </div>
 
           <div className="min-w-0 lg:col-span-7">
@@ -94,7 +91,7 @@ export function NeighborhoodsSection() {
                   ))}
                 </ul>
 
-                <p className="text-justified mt-5 text-xs leading-relaxed text-platinum/80">
+                <p className="text-justified mt-5 text-xs leading-relaxed tracking-[0.025em] text-white/95">
                   * Lista inicial de referência para Porto Alegre – RS. A
                   cobertura efetiva e eventuais deslocamentos são confirmados
                   previamente no contato inicial via WhatsApp.

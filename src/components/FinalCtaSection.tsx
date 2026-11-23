@@ -1,5 +1,4 @@
 import { WhatsappButton } from "./WhatsappButton";
-import { Tilt3DCard } from "./Tilt3DCard";
 
 export function FinalCtaSection() {
   return (
@@ -8,8 +7,7 @@ export function FinalCtaSection() {
       className="relative py-16 sm:py-20 lg:py-24"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <Tilt3DCard intensity={2.5}>
-          <div className="smoked-glass-3d relative overflow-hidden rounded-3xl px-6 py-12 text-ivory sm:px-12 sm:py-16 lg:px-16">
+        <div className="smoked-glass-3d relative overflow-hidden rounded-3xl px-6 py-12 text-ivory sm:px-12 sm:py-16 lg:px-16">
             <div
               aria-hidden="true"
               className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-gold-rose/18 blur-3xl"
@@ -40,11 +38,11 @@ export function FinalCtaSection() {
                   label="Conversar pelo WhatsApp"
                   variant="gold"
                   size="lg"
+                  className="btn-hover-gentle"
                 />
               </div>
             </div>
           </div>
-        </Tilt3DCard>
       </div>
     </section>
   );

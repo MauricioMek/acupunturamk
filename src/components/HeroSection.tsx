@@ -45,8 +45,11 @@ export function HeroSection() {
 
             {/* Editorial Institutional Copy Block */}
             <div className="mt-6 border-l-2 border-gold-rose pl-5">
-              <p className="text-justified max-w-[54ch] text-[15px] leading-[1.72] text-platinum sm:text-base">
-                Unimos a precisão clínica da Acupuntura e da Ventosaterapia em
+              <p
+                lang="pt-BR"
+                className="text-justified [word-spacing:0.08em] tracking-[0.01em] max-w-[56ch] text-[15px] leading-relaxed text-platinum sm:text-base"
+              >
+                Uno a precisão clínica da Acupuntura e da Ventosaterapia em
                 sessões personalizadas no conforto do seu lar. Um cuidado
                 terapêutico completo para alívio profundo de dores musculares,
                 liberação miofascial, redução do estresse e reequilíbrio físico

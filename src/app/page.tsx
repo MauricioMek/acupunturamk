@@ -10,6 +10,8 @@ import { FaqSection } from "@/components/FaqSection";
 import { FinalCtaSection } from "@/components/FinalCtaSection";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsapp } from "@/components/FloatingWhatsapp";
+import { GalleryMarqueeSection } from "@/components/GalleryMarqueeSection";
+import { TestimonialsMarqueeSection } from "@/components/TestimonialsMarqueeSection";
 
 export default function HomePage() {
   return (
@@ -18,10 +20,12 @@ export default function HomePage() {
       <main id="conteudo-principal">
         <HeroSection />
         <TreatmentsSection />
+        <GalleryMarqueeSection />
         <ServiceSection />
         <AboutSection />
         <IndicationsSection />
         <ProcessSection />
+        <TestimonialsMarqueeSection />
         <NeighborhoodsSection />
         <FaqSection />
         <FinalCtaSection />

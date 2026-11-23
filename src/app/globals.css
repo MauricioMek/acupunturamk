@@ -79,9 +79,11 @@
 .text-justified {
   text-align: justify;
   text-align-last: left;
-  hyphens: none;
-  -webkit-hyphens: none;
+  hyphens: auto;
+  -webkit-hyphens: auto;
   word-break: normal;
+  word-spacing: 0.06em;
+  letter-spacing: 0.008em;
 }
 
 .text-liquid-gold {
@@ -164,6 +166,73 @@
 
 .btn-liquid-gold:hover::after {
   transform: translateX(310%) skewX(-20deg);
+}
+
+.btn-hover-stable {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  transition: filter 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-hover-stable:hover {
+  transform: translateZ(0);
+  filter: brightness(1.05);
+  opacity: 0.96;
+}
+
+.btn-hover-gentle {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.btn-hover-gentle:hover {
+  transform: translateY(-1px) scale(1.01);
+  filter: brightness(1.04);
+}
+
+@keyframes marquee-ltr {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes marquee-rtl {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.marquee-track-ltr {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: marquee-ltr 42s linear infinite;
+}
+
+.marquee-track-rtl {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: marquee-rtl 48s linear infinite;
+}
+
+.marquee-container:hover .marquee-track-ltr,
+.marquee-container:hover .marquee-track-rtl {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track-ltr,
+  .marquee-track-rtl {
+    animation: none;
+  }
 }
 
 .btn-obsidian-glass {

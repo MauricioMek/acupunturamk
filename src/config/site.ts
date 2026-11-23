@@ -9,7 +9,7 @@ export interface TreatmentItem {
   title: string;
   description: string;
   highlights: string[];
-  iconName: "Sparkles" | "Disc" | "Layers";
+  iconName: "Sparkles" | "Disc" | "Layers" | "Hand";
 }
 
 export interface IndicationItem {
@@ -51,11 +51,11 @@ export const siteConfig = {
      * EDITÁVEL: Insira o número de WhatsApp com código do país (55) + DDD (51) + número, apenas dígitos.
      * Exemplo: "5551999999999"
      */
-    whatsappNumber: "",
+    whatsappNumber: "5551999816566",
     /**
      * EDITÁVEL: Telefone formatado para exibição no rodapé e botões, quando desejado.
      */
-    whatsappDisplay: "[WhatsApp a configurar]",
+    whatsappDisplay: "51999816566",
     /**
      * EDITÁVEL: E-mail institucional de contato, se aplicável.
      */
@@ -65,17 +65,19 @@ export const siteConfig = {
   },
 
   professional: {
-    name: "Maurício Message Krowczuk",
+    name: "Mauricio Message Krowczuk",
     role: "Fisioterapeuta • Formado pela PUCRS (2007)",
     registrationLabel:
       "[Registro Profissional / CREFITO — a preencher]",
     photoPath: "/mauricio-perfil.jpg",
     bioParagraphs: [
       "Fisioterapeuta formado pela PUCRS em 2007, com mais de 10 anos de experiência clínica dedicada à Acupuntura e à Ventosaterapia.",
+      "Pós-graduação em Acupuntura e Medicina Chinesa pela ABACO/CBA em 2010.",
       "Realiza atendimento totalmente personalizado e em domicílio em Porto Alegre – RS, unindo precisão técnica, alívio de dores, liberação miofascial e reequilíbrio energético no conforto e na privacidade do seu lar.",
     ],
     credentialsList: [
       "Graduação em Fisioterapia — PUCRS (2007)",
+      "Pós-graduação em Acupuntura e Medicina Chinesa — ABACO / CBA (2010)",
       "Mais de 10 anos de experiência clínica",
       "Atuação em Acupuntura e Ventosaterapia Domiciliar",
     ],
@@ -107,7 +109,7 @@ export const siteConfig = {
       {
         title: "Estrutura completa em casa",
         description:
-          "Levamos até você maca portátil, ventosas sanitizadas e agulhas estéreis de uso único para total conforto e segurança.",
+          "Levo até você maca portátil, ventosas higienizadas e agulhas estéreis de uso único para total conforto e segurança.",
       },
       {
         title: "Biossegurança rigorosa",
@@ -121,7 +123,7 @@ export const siteConfig = {
     {
       id: "acupuntura-sistemica",
       badge: "Equilíbrio & Alívio",
-      title: "Acupuntura Sistêmica",
+      title: "Acupuntura",
       description:
         "Atuação terapêutica direcionada com foco especial no alívio de dores na coluna (cervical, dorsal, lombar e ciática), além do manejo de dores crônicas e agudas, redução de estresse e ansiedade, apoio ao sono reparador e alívio de enxaquecas.",
       highlights: [
@@ -134,7 +136,7 @@ export const siteConfig = {
     {
       id: "ventosaterapia-clinica",
       badge: "Liberação Miofascial",
-      title: "Ventosaterapia Clínica",
+      title: "Ventosaterapia",
       description:
         "Aplicação clínica de ventosas com pressão suave para liberação miofascial profunda, alívio de tensões musculares e contraturas, melhora da circulação local e recuperação física.",
       highlights: [
@@ -147,7 +149,7 @@ export const siteConfig = {
     {
       id: "eletroterapia-clinica",
       badge: "Analgesia & Recuperação",
-      title: "Eletroterapia Clínica",
+      title: "Eletroterapia",
       description:
         "Aplicação de estímulos elétricos terapêuticos controlados e seguros para potencializar a analgesia, acelerar a recuperação muscular, reduzir processos inflamatórios e promover relaxamento profundo em quadros de dor aguda ou crônica.",
       highlights: [
@@ -156,6 +158,19 @@ export const siteConfig = {
         "Ação anti-inflamatória localizada",
       ],
       iconName: "Layers",
+    },
+    {
+      id: "massagem-terapeutica",
+      badge: "Terapia Manual",
+      title: "Massagem Terapêutica",
+      description:
+        "Manipulação manual dos tecidos moles com técnicas de amassamento, fricção e pressão controlada para aliviar dores musculares, reduzir tensões acumuladas, melhorar a circulação e promover relaxamento profundo.",
+      highlights: [
+        "Alívio de dores e tensões",
+        "Circulação sanguínea e linfática",
+        "Mobilidade e função física",
+      ],
+      iconName: "Hand",
     },
   ] satisfies TreatmentItem[],
 
@@ -215,19 +230,19 @@ export const siteConfig = {
       step: "02",
       title: "Conversa inicial e dúvidas",
       description:
-        "Ouvimos a sua queixa, mostramos como a sessão funciona e tiramos todas as suas dúvidas.",
+        "Ouço a sua queixa, mostro como a sessão funciona e tiro todas as suas dúvidas.",
     },
     {
       step: "03",
       title: "Verificação de região e agenda",
       description:
-        "Conferimos a rota de atendimento para o seu bairro em Porto Alegre e os horários disponíveis na agenda.",
+        "Confiro a rota de atendimento para o seu bairro em Porto Alegre e os horários disponíveis na agenda.",
     },
     {
       step: "04",
       title: "Agendamento em domicílio",
       description:
-        "Com tudo definido, vamos até a sua casa levando maca portátil, ventosas e agulhas estéreis.",
+        "Com tudo definido, vou até a sua casa levando maca portátil, ventosas e agulhas estéreis.",
     },
   ] satisfies ProcessStep[],
 
@@ -252,24 +267,24 @@ export const siteConfig = {
     {
       question: "Como funciona a acupuntura e a ventosaterapia domiciliar?",
       answer:
-        "O profissional vai até a sua residência no horário combinado, levando a estrutura completa — incluindo maca portátil, ventosas higienizadas e agulhas estéreis descartáveis. Antes da aplicação, é realizada uma conversa inicial para compreender suas queixas e definir o protocolo mais adequado.",
+        "O profissional vai até a sua residência no horário combinado, levando a estrutura completa, incluindo maca portátil, ventosas higienizadas e agulhas estéreis descartáveis. Antes da aplicação, é realizada uma conversa inicial para compreender suas queixas e definir o protocolo mais adequado.",
     },
     {
       question: "O que é necessário preparar para o atendimento?",
       answer:
-        "Apenas um espaço tranquilo, bem iluminado e arejado onde você possa se acomodar confortavelmente ou onde possamos posicionar a maca portátil. Recomenda-se usar roupas leves que permitam acesso fácil aos braços, pernas ou costas. [Orientações específicas adicionais podem ser confirmadas pelo profissional no agendamento.]",
+        "Apenas um espaço tranquilo, bem iluminado e arejado onde você possa se acomodar confortavelmente ou onde eu possa posicionar a maca portátil. Recomenda-se usar roupas leves que permitam acesso fácil aos braços, pernas ou costas.",
       isEditableNote: true,
     },
     {
       question: "Quanto tempo dura uma sessão?",
       answer:
-        "[Campo editável: informe aqui a duração média da primeira avaliação e das sessões de acompanhamento conforme a prática do profissional.]",
+        "Em média, cada sessão tem duração de 50 minutos a 1 hora, incluindo avaliação e cuidado dedicado para que o atendimento seja feito com tranquilidade e atenção.",
       isEditableNote: true,
     },
     {
       question: "Quais regiões de Porto Alegre são atendidas?",
       answer:
-        "Trabalhamos com atendimento em bairros selecionados de Porto Alegre, sujeitos à verificação de rota e disponibilidade de agenda. Caso o seu bairro não esteja listado na seção de regiões de referência, entre em contato pelo WhatsApp para consultarmos a possibilidade de atendimento.",
+        "Atendo com atendimento em bairros selecionados de Porto Alegre, sujeitos à verificação de rota e disponibilidade de agenda. Caso o seu bairro não esteja listado na seção de regiões de referência, entre em contato pelo WhatsApp para consultar a possibilidade de atendimento.",
     },
     {
       question: "Como agendar um horário?",
@@ -279,7 +294,7 @@ export const siteConfig = {
     {
       question: "Quais são as orientações antes do atendimento?",
       answer:
-        "De modo geral, recomenda-se não comparecer à sessão em jejum prolongado nem logo após refeições muito pesadas, além de vestir roupas confortáveis. [Orientações clínicas específicas são alinhadas previamente pelo profissional durante o contato inicial.]",
+        "De modo geral, recomenda-se não comparecer à sessão em jejum prolongado nem logo após refeições muito pesadas, além de vestir roupas confortáveis.",
       isEditableNote: true,
     },
   ] satisfies FaqItem[],
