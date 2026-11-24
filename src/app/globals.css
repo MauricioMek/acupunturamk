@@ -301,3 +301,24 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Ocultar identificador Netlify / Powered by Netlify */
+#nl-badge-frame,
+#nl-hud-frame,
+#nl-badge,
+#nl-card,
+#nl-pop,
+#nl-mini,
+iframe[title*="Netlify"],
+iframe[src*="netlify"],
+[data-netlify-site-id] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  z-index: -99999 !important;
+}
+

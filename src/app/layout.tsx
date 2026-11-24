@@ -84,7 +84,27 @@ export default function RootLayout({
 
   return (
     <html lang="pt-BR" className={`${cormorant.variable} ${jakarta.variable}`}>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                localStorage.setItem('nl-hud:public:v1', 'hidden:' + (Date.now() + 604800000));
+              } catch (e) {}
+              if (typeof document !== 'undefined') {
+                const removeBadge = () => {
+                  const el = document.getElementById('nl-badge-frame') || document.getElementById('nl-hud-frame');
+                  if (el && el.tagName === 'IFRAME') el.remove();
+                };
+                const observer = new MutationObserver(removeBadge);
+                observer.observe(document.documentElement, { childList: true, subtree: true });
+              }
+            `,
+          }}
+        />
+      </head>
       <body className="bg-obsidian-atmosphere relative min-h-screen flex flex-col text-platinum">
+        <div id="nl-badge-frame" style={{ display: "none" }} aria-hidden="true" />
         <div
           aria-hidden="true"
           className="bg-noise-grain pointer-events-none fixed inset-0 z-0"
