@@ -8,6 +8,7 @@ import { WhatsappButton } from "./WhatsappButton";
 const navItems = [
   { label: "Início", href: "/#hero" },
   { label: "Tratamentos", href: "/#tratamentos" },
+  { label: "Procedimentos", href: "/#procedimentos" },
   { label: "Atendimento", href: "/#atendimento" },
   { label: "Profissional", href: "/#profissional" },
   { label: "Indicações", href: "/#indicacoes" },

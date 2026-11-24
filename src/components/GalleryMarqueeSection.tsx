@@ -89,6 +89,7 @@ export function GalleryMarqueeSection() {
 
   return (
     <section
+      id="procedimentos"
       aria-labelledby="gallery-marquee-heading"
       className="relative overflow-hidden py-10 sm:py-12 lg:py-14"
     >
