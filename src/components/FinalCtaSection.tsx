@@ -30,7 +30,7 @@ export function FinalCtaSection() {
               </h2>
               <p className="text-justified mx-auto mt-4 max-w-[54ch] text-base leading-relaxed text-platinum sm:text-lg">
                 Envie uma mensagem pelo WhatsApp para tirar suas dúvidas,
-                informar seu bairro em Porto Alegre e consultar os horários
+                informar seu bairro em Porto Alegre, consultar os horários
                 disponíveis e valores para acupuntura e ventosaterapia.
               </p>
               <div className="mt-8 flex justify-center">
