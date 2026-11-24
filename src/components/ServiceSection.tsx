@@ -47,8 +47,8 @@ export function ServiceSection() {
               </span>
             </h2>
             <p className="text-justified mt-4 max-w-[64ch] text-base leading-relaxed text-platinum">
-              A acupuntura e a ventosaterapia domiciliar oferece a mesma
-              atenção técnica de um consultório, com a vantagem de acontece
+              A acupuntura e a ventosaterapia domiciliar oferecer a mesma
+              atenção técnica de um consultório, com a vantagem de acontecer
               no espaço onde você já se sente à vontade. Levo a estrutura
               completa até a sua casa — incluindo maca portátil, ventosas
               higienizadas e agulhas estéreis descartáveis.
