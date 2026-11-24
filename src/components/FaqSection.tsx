@@ -30,8 +30,8 @@ export function FaqSection() {
             <span className="text-liquid-gold">o atendimento domiciliar</span>
           </h2>
           <p className="text-justified mx-auto mt-4 max-w-[56ch] text-base leading-relaxed text-platinum">
-            Reúno as principais orientações sobre como preparar sua casa e
-            realizar o agendamento em Porto Alegre.
+            Reúno as principais orientações sobre como funciona o atendimento e
+            como é realizado o agendamento em Porto Alegre.
           </p>
         </div>
 
