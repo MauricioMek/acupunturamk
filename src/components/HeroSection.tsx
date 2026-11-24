@@ -80,7 +80,7 @@ export function HeroSection() {
             {/* 3 Symmetric Bottom Differentials */}
             <ul
               aria-label="Credenciais e diferenciais"
-              className="mt-10 grid divide-y divide-gold-rose/25 rounded-2xl border border-white/10 bg-charcoal/55 backdrop-blur-xl sm:grid-cols-[1fr_0.95fr_1.35fr] sm:divide-x sm:divide-y-0"
+              className="mt-10 grid divide-y divide-gold-rose/25 rounded-2xl border border-white/10 bg-charcoal/55 backdrop-blur-xl sm:grid-cols-[1fr_1.02fr_1.42fr] sm:divide-x sm:divide-y-0"
             >
               <li className="flex items-start gap-2.5 px-3.5 py-3.5 text-left text-xs font-medium leading-snug text-white hyphens-none">
                 <Award
@@ -94,14 +94,18 @@ export function HeroSection() {
                   className="mt-0.5 h-4 w-4 shrink-0 text-gold-rose"
                   aria-hidden="true"
                 />
-                <span>+10 Anos de Experiência</span>
+                <span className="tracking-[0.025em] [word-spacing:0.06em]">
+                  +10 Anos de Experiência
+                </span>
               </li>
               <li className="flex items-start gap-2.5 px-3.5 py-3.5 text-left text-xs font-medium leading-snug text-white hyphens-none">
                 <ShieldCheck
                   className="mt-0.5 h-4 w-4 shrink-0 text-gold-rose"
                   aria-hidden="true"
                 />
-                <span>Materiais Estéreis &amp; Ventosas Higienizadas</span>
+                <span className="tracking-[0.025em] [word-spacing:0.06em]">
+                  Materiais Estéreis &amp; Ventosas Higienizadas
+                </span>
               </li>
             </ul>
           </div>
