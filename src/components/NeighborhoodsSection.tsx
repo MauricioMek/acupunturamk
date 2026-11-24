@@ -32,8 +32,8 @@ export function NeighborhoodsSection() {
             </h2>
             <p className="text-justified mt-4 max-w-[54ch] text-base leading-relaxed text-platinum">
               O atendimento domiciliar é organizado por regiões para garantir
-              pontualidade e tranquilidade em cada visita. Abaixo estão alguns
-              bairros de referência na capital gaúcha.
+              pontualidade e tranquilidade em cada visita. No quadro ao lado
+              estão alguns bairros de referência na capital gaúcha.
             </p>
 
             <div className="smoked-glass-3d mt-6 rounded-2xl p-5">
