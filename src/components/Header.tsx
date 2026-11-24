@@ -6,7 +6,7 @@ import { BrandMark } from "./BrandMark";
 import { WhatsappButton } from "./WhatsappButton";
 
 const navItems = [
-  { label: "Home", href: "/#hero" },
+  { label: "Início", href: "/#hero" },
   { label: "Tratamentos", href: "/#tratamentos" },
   { label: "Atendimento", href: "/#atendimento" },
   { label: "Profissional", href: "/#profissional" },
