@@ -53,7 +53,7 @@ export function HeroSection() {
                 sessões personalizadas no conforto do seu lar. Um cuidado
                 terapêutico completo para alívio profundo de dores musculares,
                 liberação miofascial, redução do estresse e reequilíbrio físico
-                e energético — sem que você precise enfrentar deslocamentos ou
+                e energético sem que você precise enfrentar deslocamentos ou
                 trânsito em Porto Alegre.
               </p>
             </div>
