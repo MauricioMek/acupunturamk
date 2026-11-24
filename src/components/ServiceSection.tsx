@@ -50,7 +50,7 @@ export function ServiceSection() {
               A acupuntura e a ventosaterapia domiciliar oferecem a mesma
               atenção técnica de um consultório, com a vantagem de acontecer
               no espaço onde você já se sente à vontade. Levo a estrutura
-              completa até a sua casa — incluindo maca portátil, ventosas
+              completa até a sua casa incluindo maca portátil, ventosas
               higienizadas e agulhas estéreis descartáveis.
             </p>
             <p className="text-justified mt-3.5 max-w-[64ch] text-base leading-relaxed text-platinum">

@@ -57,8 +57,8 @@ export default function PrivacyPage() {
                   Ao clicar nos botões de contato, você será direcionado ao
                   aplicativo ou versão web do WhatsApp para conversar diretamente
                   com o atendimento responsável. Eventuais informações
-                  compartilhadas voluntariamente por você — como nome, bairro,
-                  disponibilidade de horário e dúvidas iniciais — são utilizadas
+                  compartilhadas voluntariamente por você, como nome, bairro,
+                  disponibilidade de horário e dúvidas iniciais, são utilizadas
                   unicamente para responder à solicitação, verificar a
                   disponibilidade de agenda e viabilizar o atendimento
                   domiciliar.
