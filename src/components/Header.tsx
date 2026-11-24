@@ -30,19 +30,19 @@ export function Header() {
   }, []);
 
   return (
-    <header className="sticky top-3 z-40 px-3 sm:px-6 lg:px-8">
-      <div className="dark-crystal-nav mx-auto flex w-full max-w-[1440px] flex-nowrap items-center justify-between gap-3 rounded-full px-3 py-2 sm:px-4 xl:gap-4">
+    <header className="sticky top-3 z-40 px-3 sm:px-6 lg:px-6 xl:px-4">
+      <div className="dark-crystal-nav mx-auto flex w-full max-w-[1580px] flex-nowrap items-center justify-between gap-2.5 rounded-full px-3 py-2 sm:px-4 xl:gap-3 xl:pl-4 xl:pr-4 2xl:gap-4 2xl:pr-5">
         <BrandMark />
 
         <nav
           aria-label="Navegação principal"
-          className="hidden flex-nowrap items-center gap-1.5 xl:flex"
+          className="hidden flex-nowrap items-center gap-1 xl:flex 2xl:gap-1.5"
         >
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="group relative inline-flex items-center gap-1.5 rounded-full border border-gold-rose/30 bg-gradient-to-b from-white/[0.05] to-white/[0.02] px-2.5 py-1.5 text-[13px] font-medium tracking-[0.02em] text-gold-rose whitespace-nowrap shadow-[0_4px_12px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(212,180,140,0.18)] backdrop-blur-md transition-all duration-200 hover:border-gold-rose/70 hover:text-gold-champagne hover:shadow-[0_6px_16px_rgba(0,0,0,0.55),inset_0_1px_0_rgba(245,223,196,0.28)]"
+              className="group relative inline-flex items-center gap-1.5 rounded-full border border-gold-rose/30 bg-gradient-to-b from-white/[0.05] to-white/[0.02] px-2 py-1.5 text-[12.5px] font-medium tracking-[0.02em] text-gold-rose whitespace-nowrap shadow-[0_4px_12px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(212,180,140,0.18)] backdrop-blur-md transition-all duration-200 hover:border-gold-rose/70 hover:text-gold-champagne hover:shadow-[0_6px_16px_rgba(0,0,0,0.55),inset_0_1px_0_rgba(245,223,196,0.28)] 2xl:px-2.5 2xl:text-[13px]"
             >
               <span className="relative flex h-1.5 w-1.5 shrink-0" aria-hidden="true">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-gold-champagne opacity-75" />

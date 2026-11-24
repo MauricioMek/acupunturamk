@@ -91,7 +91,7 @@ export function GalleryMarqueeSection() {
     <section
       id="procedimentos"
       aria-labelledby="gallery-marquee-heading"
-      className="relative overflow-hidden py-10 sm:py-12 lg:py-14"
+      className="relative scroll-mt-24 overflow-hidden py-10 sm:py-12 lg:py-14"
     >
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
