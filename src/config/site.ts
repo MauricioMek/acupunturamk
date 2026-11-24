@@ -200,7 +200,7 @@ export const siteConfig = {
       id: "cefaleias",
       title: "Tensões cervicais e cefaleias tensionais",
       description:
-        "Atuação direcionada ao relaxamento da musculatura e ao conforto em quadros de tensão recorrente, sempre em diálogo com o acompanhamento médico.",
+        "Atuação direcionada ao relaxamento da musculatura e ao conforto em quadros de tensão recorrente, com foco no bem-estar e no alívio gradual no dia a dia.",
       iconName: "Sparkles",
     },
     {
